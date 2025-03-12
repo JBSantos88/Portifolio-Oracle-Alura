@@ -31,7 +31,7 @@ body {
 
 .cabecalho_menu_link {
     font-family: "Montserrat", sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-decoration: none;
     font-weight: 600;
     color: var(--cor-terciaria);
@@ -40,19 +40,20 @@ body {
     padding: 5% 10%;
     display: flex;
     align-items: center;
+    gap: 82px;
     justify-content: space-between;
 }
 
 
 .apresentacao_conteudo {
-    width: 680px;  
+    width: 50%;  
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
 .apresentacao_conteudo_titulo {    
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: "Krona One", sans-serif;
 }
 
@@ -61,14 +62,14 @@ body {
 }
 
 .apresentacao_conteudo_texto {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: "Montserrat", sans-serif;
 }
 
 .apresentacao_links_subtitulo {
     font-family: 'Krona One', sans-serif;
     font-weight: 100;
-    font-size: 22px;
+    font-size: 1.5rem;
 }
 
 .apresentacao_links {
@@ -79,15 +80,15 @@ body {
     gap: 32px;
 }  
 
-.apresentacao_links_link {  
+.apresentacao_links_navegacao {  
     display: flex;
     justify-content: center;
     gap: 16px;
-    width: 378px;
+    width: 50%;
     border: 2px solid var(--cor-terciaria);
     text-align: center;
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 1.5rem;
     padding: 21px 0;
     text-decoration: none;
     color: var(--cor-secundaria);
@@ -99,12 +100,36 @@ body {
     background-color: var(--cor-hover);
 }
 
+.apresentacao_imagem {
+    width: 40%;
+}
+
 .rodape {
     color: #000000;
     background-color: var(--cor-terciaria);
     padding: 24px;
     text-align: center;
     font-family: "Montserrat", sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+
+    .cabecalho {
+        padding: 8%;    
+    }
+
+    .cabecalho_menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao_conteudo {
+        width: auto;
+    }
 }
